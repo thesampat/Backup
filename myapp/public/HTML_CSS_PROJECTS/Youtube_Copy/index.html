@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+    <head>
+        <title>YouTube</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            aside{
+                background-color:white;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            aside>div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            aside h5{
+                font-weight: 400;
+                color: black;
+                margin-top: -1px;
+            }
+
+           
+            .youtube{
+                display: flex;
+                
+            }
+            header{
+                 background-color:white;
+            }
+            .main .header-main{
+                display: grid;
+                grid-template-columns: 8fr 16fr auto 1fr 1fr 1fr 1fr;
+                padding: 10px;
+                align-items: center;
+            }
+
+            .main .header-main>div{
+                /* border: 1px solid black; */
+            }
+
+            .header-main .Search-bar{
+                display: flex;
+                
+                
+            }
+
+            .header-main .Search-bar-and-mic{
+                display: flex;
+                flex-direction: row ;
+                /* justify-content: center; */
+                align-items:center;
+                gap: 15px;
+            }
+
+
+            header .devider{
+                margin-bottom: 10px;
+                border: 0.1px solid black;
+            }
+
+            .header-second>button{
+                padding: 5px 15px;
+                border-radius: 20px;}
+
+                /* Section */
+
+            .window{
+                display: flex;
+                flex-direction: column;
+                /* border: 1px solid black; */
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            .window .detailsc{
+                display: flex;
+                /* border: 1px solid black; */
+                margin-right: 20px;
+                align-items: flex-start;
+            }
+
+            .window .detailsc .details{
+                /* display: flex;
+                flex-direction: column; */
+                /* justify-content: flex-start; */
+                /* align-items: flex-start; */
+            }
+
+            section{
+                display: grid;
+                /* width: 80vh; */
+                grid-template-columns: repeat(3, auto);
+                column-gap: 100px;
+                row-gap: 40px;
+                padding: 10px;
+
+            }
+
+            section > .window >div>img{
+                width: 300px;
+            }
+
+            .details>*{
+                margin-top: -1px;
+            }
+            .details>h3{
+                font-weight: bold;
+                font-size: 225x;
+            }
+
+            .details> h4{
+                margin-top: -10px;
+            }
+            .details> p{
+                margin-top: -10px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="youtube">
+
+            <aside>
+                <div class="Sicon">
+                    <i></i>
+                    <img src="icons/bars.svg">
+                    <h5></h5>
+                </div>
+    
+                <div class="Sicon">
+                    <img src="icons/home.svg">
+                    <h5>Home</h5>
+                </div>
+    
+                <div class="Sicon">
+                    <img src="icons/compass.svg">
+                    <h5>Explore</h5>
+                </div>
+
+                <div class="Sicon">
+                    <img src="icons/video-gallary.svg">
+                    <h5>Subscriptions</h5>
+                </div>
+    
+                <div class="Sicon">
+                    <img src="icons/video-library.svg">
+                    <h5>LIbrary</h5>
+                </div>
+            </aside>
+
+            <div class="main">
+                <header>
+                    <div class="header-main">
+                        <div class="hicon">
+                            <img src="images/youtube-logo.png" style="height:30px ;">
+                        </div>
+    
+                        <div class="Search-bar-and-mic">
+                            <div class="Search-bar">
+                                <input type="search" style="width:450px; height: 50px;">
+                                <img src="icons/search.svg" style="background-color: rgb(173, 173, 173); padding: 10px;">
+                            </div>
+
+                            <div class="hicon" style="background-color: rgb(173, 173, 173); border-radius: 100px; padding: 10px;">
+                                <img src="icons/mic.svg">
+                            </div> 
+                        </div>
+    
+                        <div class="#"></div>
+    
+                        <div class="hicon">
+                            <img src="icons/video-add.svg">
+                        </div>
+    
+                        <div class="hicon">
+                            <img src="icons/dot-grid.svg">
+                        </div>
+    
+                        <div class="hicon">
+                            <img src="icons/bell.svg">
+                        </div>
+    
+                        <div class="hicon">
+                            <img src="images/avatar.png">
+                        </div>
+                    </div>
+                    <div class="devider"></div>
+                    <div class="header-second">
+                        <button class="tag">All</button>
+                        <button class="tag">Mixes</button>
+                        <button class="tag">Crypto</button>
+                        <button class="tag">Html</button>
+                        <button class="tag">Css</button>
+                        <button class="tag">Javascript</button>
+                    </div>
+                </header>
+                <section>
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="window">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                        </div>
+                        <div class="detailsc">
+                            <div class="cicon">
+                                <img src="images/avatar.png">
+                            </div>
+                            <div class="details">
+                                <h3>Chakra UI Complete Course Hindi</h3>
+                                <h4>Do Some Coding</h4>
+                                <p>10Cr views  1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        
+    </body>
+</html>

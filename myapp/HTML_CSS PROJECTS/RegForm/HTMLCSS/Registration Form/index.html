@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MY REG FROM</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container{
+            /* background: radial-gradient(rgb(119, 98, 98), rgb(212, 231, 128)); */
+            display: flex;
+            justify-content: center;
+            min-width: 500px;
+            max-width: 500px;
+
+            }
+
+            .panel{
+                background: linear-gradient(to top, rgb(67, 206, 206), rgb(229, 234, 235));
+                margin: 20px;
+            }
+
+            form{
+                margin: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                /* border: 1px; */
+
+            }
+
+            .inp{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #email{
+                width: 380px;;
+            }
+
+            .gender{
+                position: relative;
+                right: 7px;
+                font-size :9px;
+                color: black;
+            }
+            #Hobbiesr{
+                font-size: 8.8px;
+            }
+            .hobbies{
+                margin-left: 77px;
+                color: black;
+            }
+            .inp, .gender .hobbies{
+                margin-top: 2px;
+                
+            }
+            label{
+               font-size: 14px;
+               font-weight: 500; 
+               color:black;
+               margin-bottom: 2px;
+            }
+
+            .inp2{
+                display: flex;
+                flex-direction: column;
+            }
+            #inp22{
+                width: 180px;
+                position: relative;
+            }
+            #incomerr{
+                position: relative;
+                width: 180px;
+            }
+            .upload{
+                display: flex;
+                flex-direction: column;
+                width: 180px;
+                margin-top: 4px;
+                color: red;
+               
+            }
+            #bioi{
+                width: 380px;
+                height: 100px;
+            }
+
+            /* lets change input type sizes */
+            input{
+                height: 25px;
+                border: 1px solid black;
+                border-radius: 8px;
+                margin-bottom: 4px;
+            }
+            #filei{
+                border: 0px;
+            }
+
+            .header{
+                background: linear-gradient(to top right, rgb(204, 71, 115), white) 459px;
+                height: 60px;
+                font-size: 12px;
+                color: black;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                position: relative;
+                bottom:10px
+            }
+            h1{
+                padding: 15px;
+                padding-left: 120px;
+            }
+
+            .footer{
+                background: linear-gradient(to bottom, rgb(204, 71, 115), white);
+                height: 60px;
+                font-size: 12px;
+                color: black;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                position: relative;
+                top:10px;
+                display: flex;
+                justify-content: end;
+
+            }
+            #btn{
+                color: black;
+                width: 100px;
+                height: 30px;
+                background-color: rgb(0, 236, 118);
+                border-radius: 5px;
+                font-size: 12px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="panel">
+                    <div class="header">
+                        <h1>Create Account</h1>
+                    </div>
+
+                <form>
+                    <div class="inp">
+                        <label for="fname" >First Name</label>
+                        <input type="text" id="fname" cals="inp" placeholder=" Enter Your Name">
+                    </div>
+                    
+                    <div class="inp">
+                        <label for="lname" >Last Name</label>
+                        <input type="text" id="lname" cals="inp" placeholder=" Enter Last Name">
+                    </div>
+
+                    <div class="inp">
+                        <label for="amail" >Email</label>
+                        <input type="text" id="email" cals="inp" placeholder=" Enter Your Email">
+                    </div>
+
+                    <div class="inp">
+                        <label for="password" >Password</label>
+                        <input type="text" id="password" cals="inp" placeholder=" Password">
+                    </div>
+
+                    <div class="inp">
+                        <label for="cpassword" >Confirm Password</label>
+                        <input type="text" id="cpassword" cals="inp" placeholder=" Confirm Your Password">
+                    </div>
+
+                    <div class="gender">
+                        <label for="genderr" class="radioc">Gender</label>
+                        <div class="Gender">
+                            Male <input type="radio" class="radioo" name="gender">
+                            Female <input type="radio" class="radioo" name="gender">
+                        </div>
+                    </div>
+
+                    <div class="hobbies">
+                        <label for="Hobbiesr">Hobbies</label>
+                        <div class="radio" id="Hobbiesr">
+                            <input type="checkbox" class="radioo">Music
+                            <input type="checkbox" class="radioo">Sports
+                            <input type="checkbox" class="radioo">Travel
+                            <input type="checkbox" class="radioo">Movies
+                        </div>
+                    </div>
+
+                    <div class="inp2" id="inp22">
+                        <label for="sin" >Source of Income</label>
+                        <select class="select" id ='incomes'>
+                        <option value="v1">Employed</option>
+                        <option value="v1">Business</option>
+                        <option value="v1">Service</option>
+                        </select>
+                    </div>
+
+                    <div class="inp2" id="incomerr">
+                        <label for="Incomer" class="radioc">Income</label>
+                        <input type="range" class="radioo">
+                    </div>
+
+                    <div class="upload" id="profileu">
+                        <label for="filei">Upload Profile Picture</label>
+                        <input type="file" id="filei">
+                    </div>
+
+                    <div class="inp">
+                        <label for="agei" >Age</label>
+                        <input type="text" id="agei" class="inp" placeholder=" Enter Your Age">
+                    </div>
+
+                    <div class="inp">
+                        <label for="bioi" >Bio</label>
+                        <input type="textarea" id="bioi" class="bioc">
+                    </div>
+                </form>
+                    <div class="footer">
+                    <Button id="btn">Create Account</Button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+SO with this project when i learnt is
+1. Notepro
+
+1. Routers
+2. passing props to routers
+3. Use context hook api
+4. axios http requests
+5. Json api
+6. class
+7. functions
+8. useState, UseLocation, UseContext
+
+So far learned many things now stop this project, Will continue if needed futher in future, 
+End.

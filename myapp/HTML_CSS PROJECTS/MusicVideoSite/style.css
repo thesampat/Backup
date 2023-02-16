@@ -1,0 +1,212 @@
+
+*{
+padding: 0;
+margin:0;
+box-sizing: border-box;
+}
+
+html, body{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Header Navigation */
+
+header{
+background-color: rgb(86, 32, 136);
+position: sticky;
+top: 0;
+z-index: 100;
+
+}
+
+.logo span{
+color: white;
+font-size: 28px;
+font-weight: bold;
+
+}
+.container .header_container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 0;
+}
+
+nav ul{
+display: flex;
+list-style:none;
+gap: 20px;
+}   
+nav ul li a{
+text-decoration: none;
+color: white;
+font-family: monospace;
+font-size: 1.3em;
+}
+
+nav ul li a:hover{
+transition: 0.1s ease-in-out;
+border-bottom: 2px solid;
+}
+
+
+/* Hero -Section Css */
+.hero-section{
+background-image: url(images/hero_image.png);
+background-size: cover;
+height: 100vh;
+background-position: center;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.hero-section, h1, h3, p{
+color: white;
+text-align: center;
+}
+
+.hero-section h1{
+font-size: 6em;
+font-weight:bold;
+margin-bottom: 50px;
+}
+.hero-section h3{
+font-size: 2em;
+margin-bottom: 50px;
+}
+.hero-section p{
+font-size: 1em;
+}
+
+/* Music Container */
+.music{
+background-color: rgb(57, 7, 92);
+}
+.music-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 90vh;
+gap: 30px;
+}
+
+/* blank-section */
+.blank-section{
+padding-top: 70vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+gap:50px;
+justify-content: center;
+align-items: center;
+margin-bottom: 60px;
+
+}
+.blank-section button{
+padding: 10px 15px;
+border-style: none;
+background-color:rgb(71, 46, 138);
+color: white;
+}
+
+/* Video Section */
+.video-section{
+background-image: url(images/video.png);
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+.video-section .container{
+display: flex;
+flex-direction: column;
+gap: 50px;
+padding-top: 25vh;
+
+}
+
+/* Credit Card */
+
+.credit-card .container{
+/* height: 70vh; */
+padding: 30px 0;
+}
+
+.credit-card .container .split{
+display: flex;
+height: 100%;
+width: 100%;
+justify-content: center;
+align-items: center;
+
+gap: 50px;
+
+}
+
+.split .contains{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+gap:20px;
+}
+
+.contains p{
+text-align: start;
+}
+.contains h3{
+text-align: start;
+}
+
+.container button{
+align-self: center;
+}
+.container .split .underline{
+border: 1px solid black;
+}
+
+
+/* Footer */
+
+footer .upperfooter{
+background-color: rgb(71, 46, 138);
+}
+
+footer .upperfooter .container{
+display: flex;
+justify-content: space-between;
+padding: 20px 40px;
+}
+
+footer .upperfooter h4{
+color: black;
+}
+.upperfooter ul{
+list-style: none;
+color: white;
+}
+.upperfooter .container >div h4{
+color: white;
+border-bottom: 2px solid white;
+padding-bottom: 10px;
+}
+.upperfooter .container >div li{
+padding-top: 5px;
+font-family: monospace;
+}
+
+/* Lower Footer */
+.lowerfooter{
+background-color: blue;
+padding: 20px 30px;
+}
+
+.container .split button{
+align-self: flex-start;
+}

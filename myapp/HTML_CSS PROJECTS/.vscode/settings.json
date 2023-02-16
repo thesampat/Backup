@@ -1,0 +1,32 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**.json": true,
+        "/src/**.json": true,
+        "node_modules": true,
+        "package-lock.json": true,
+        "FoodSite": true,
+        ".vscode": true,
+        "ParallaxWebsite": true,
+        "MusicVideoSite": true,
+        "RegForm": true,
+        "RegForm/HTMLCSS/Registration Form": true,
+        "WorkSite": true,
+        "Youtube_Copy": true
+    },
+    "hide-files.files": [
+        "FoodSite",
+        ".vscode",
+        "ParallaxWebsite",
+        "MusicVideoSite",
+        "RegForm",
+        "RegForm/HTMLCSS/Registration Form",
+        "WorkSite",
+        "Youtube_Copy"
+    ]
+}

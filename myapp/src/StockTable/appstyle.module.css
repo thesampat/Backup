@@ -1,0 +1,14 @@
+table{
+    width: 100%;
+}
+
+thead{
+    text-align:  start;
+    background-color: red
+}
+tbody th{
+    background-color: yellow;
+}
+tbody td{
+    background-color: rgb(52, 218, 218);
+}

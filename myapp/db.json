@@ -1,0 +1,25 @@
+{
+  "Notes": [
+    {
+      "title": "Shopping",
+      "desc": "Need to buy 3 things",
+      "note": "Apple, Chicken, Mango",
+      "backimg": "0",
+      "id": 1
+    },
+    {
+      "title": "HomeWork",
+      "desc": "I Don't want to be beated",
+      "note": "5 Pages, 3 Calculations",
+      "backimg": "2",
+      "id": 2
+    },
+    {
+      "title": "Location",
+      "desc": "Need to reach house",
+      "note": "2KM west, North, Take Left, Go Straight And voila!!!",
+      "backimg": "1",
+      "id": 3
+    }
+  ]
+}

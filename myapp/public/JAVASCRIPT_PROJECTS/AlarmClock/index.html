@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=“shortcut-icon” href=“#”/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="app.js" defer></script>
+    <style>
+        .row>div>input {
+            width: 50px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .row>div {
+            margin: 0 2px;
+        }
+
+        .row {
+            justify-content: center;
+            
+        }
+
+        button{
+            border: none;
+            border: 1px solid rgb(99, 92, 92);
+            border-radius: 10px;
+            outline-color: blue;
+            background-color: rgb(64, 170, 219);
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<br>
+<div id="container" style="display:flex; justify-content: center;"></div>
+<h1 id="con"></h1>
+<form>
+    <center>
+        <h3 style="text-align: center; margin-top: 50px; color: red; border-bottom: 3px solid black; width: 200px;">Set
+            Alaram</h3>
+    </center>
+    <div class="row">
+        <div class="col1">
+            <input type="text" id="hour" class="form-control" placeholder="Hour">
+        </div>
+        <div class="col1">
+            <input type="text" id="min" class="form-control" placeholder="Min">
+        </div>
+        <div class="col1">
+            <input type="text" id="sec" class="form-control" placeholder="Sec">
+        </div>
+        <div class="col1">
+            <input type="text" id="e" class="form-control" placeholder="E">
+        </div>
+    </div>
+    <button type="submit" id="sub">Set Alaram</button>
+</form>
+
+</body>
+
+
+
+</html>

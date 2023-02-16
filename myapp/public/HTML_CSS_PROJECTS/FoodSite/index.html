@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>FoodResturent Site</title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+               
+                }
+
+            html, body{
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                line-height: 1.3;
+
+            }
+
+            nav{
+                height: 100px;
+                display: flex;
+                justify-content: flex-start;
+                position: sticky;
+                z-index: 50;
+                padding: 10px;
+                margin-bottom: 32px;
+            }
+            
+            nav{
+                box-shadow: 0px 5px 5px 5px rgba(1,1,1, 0.03)
+            }
+
+            .imagec{
+                width: 1200px;
+                margin: 0 auto;
+
+            }
+
+            /* Css for presentation */
+
+            .presentation{
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+            }
+
+            .presentation .parea{
+                margin-left: 15vh;
+                margin-top: 17vh;
+            }
+            
+            .presentation .parea h1{
+                font-size: 72px;
+                font-weight: 300;
+
+            }
+            .presentation .parea h4{
+                font-weight: 100;
+            }
+
+            .presentation .plate{
+                /* margin-left: 12%; */
+                margin-top: 5%;
+            }
+
+            .presentation .parea .discount{
+                display: inline;
+                background-color: rgb(39, 194, 8);
+                padding: 10px;
+                color:white;    
+            }
+            .presentation .button button{
+                background-color: rgb(248, 195, 95);
+                padding: 10px;
+                border: none;
+                margin-top: 25px;
+            }
+            section .cards{
+                max-width: 1200px;
+                margin: 0 auto;
+                margin-top: 100px;
+                /* margin-left: 0px; */
+            }
+
+            .cards .card-grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+                gap: 40px;
+                margin-left: 20px;
+
+                }
+
+            .cards .card-grid .grid-item{
+                display: flex;
+                gap:10px;
+                /* padding: 0 20px;  */
+
+            }
+
+            .cards .card-grid .grid-item .gridc{
+                margin-left: 15px;
+            }   
+
+            
+
+            .grid-item:hover{
+                box-shadow:2px 2px 5px rgba(0, 0, 0, 0.1)
+            }
+
+            .devider{
+                border: 1px solid grey;
+                width: 100%;
+                max-width: 1200px;
+                margin: 30px auto;
+                
+            }
+
+            .sectiong{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 50px;
+                padding: 0 20px;
+            }
+
+            .tag{
+                background-color: green;
+                /* display: inline; */
+                padding:5px 10px;
+                align-self: center;
+            }
+            .sectiong >h2{
+                align-self: center;
+            }
+           
+
+            .gallery{
+                display: grid;
+                margin-bottom: 50px;
+                gap:10px;
+                justify-content: center;
+                grid-template-areas: "i1 i1 i2 i3"
+                                    "i1 i1 i2 i7"
+                                    "i4 i5 i6 i7";
+            }
+
+            .icon{
+                border-radius: 10px;
+                width: 15vh; 
+                height: 15vh;
+            }
+
+          
+            .grid1{
+                grid-area: i1;
+            }
+            .grid2{
+                grid-area: i2;
+            }
+            .grid3{
+                grid-area: i3;
+            }
+            .grid4{
+                grid-area: i4;
+            }
+            .grid5{
+                grid-area: i5;
+            }
+            .grid6{
+                grid-area: i6;
+            }
+            .grid7{
+                grid-area: i7;
+            }
+
+            .gallery>div>img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                
+            }
+            .gallery>div>img:hover{
+                transform: scale(1.05);
+                transition:0.2s ease-in-out;
+            }
+
+
+            /* Footer */
+            .footer_section{
+                width: 100%;
+                background-color: rgba(160, 212, 63, 0.658);
+                display: flex;
+                justify-content: space-around;
+
+                padding: 20px 0;
+            }
+
+            ul{
+                list-style: none;
+                line-height: 25px;
+            }
+            .footer_section>div>h3{
+                margin-bottom: 10px;
+            }
+            .en >h3:last-child{
+                margin-top: 10px;
+                
+            }
+
+
+            @media (max-width:780px){
+                .presentation{
+                    flex-direction: column;
+                }
+                .plate{
+                    display: flex;
+                    justify-content: center;
+                }
+                .plate{
+                    display: flex;
+                    justify-content: center;
+                }
+                .plate img{
+                    width: 80%;
+                }
+                .presentation .parea{
+                    margin-left: 5px;
+                }
+                .presentation .parea h1{
+                    font-size: 32px
+                }
+                .parea>div{
+                    padding: 0 20px;
+                }
+                .card-grid{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                .footer_section{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap:20px;
+                    padding: 0 20px;
+                }
+                  } 
+
+                 
+        </style>
+    </head>
+
+
+    <body>
+        <nav>
+            <div class="imagec">
+                <img src="images/logo.png" alt="logo" id="logoi">
+            </div>
+        </nav>
+
+        <section>
+            <div class="presentation">
+                <div class="plate">
+                    <img src="images/hero_image.png" alt="titleimage">
+                </div>
+
+                <div class="parea">
+                    <div class="mainh">
+                        <h4 class="discount">50% Off on All Products</h4><br><br>
+                        <h1>Enjoy Your Delicious Food</h1><br>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, iste corporis tempore necessitatibus inventore ex?</h4>
+                    </div>
+
+                    <div class="button">
+                        <button id="buttoni">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="cards">
+                <div class="card-grid">
+                    <div class="grid-item">
+                        <div class="icon">
+                            <img src="icons/delivery.png"  class="icon">
+                        </div>
+
+                        <div class="gridc">
+                            <div class="iconh">
+                                <h3>Discount Voucher</h3>
+                            </div>
+
+                            <div class="icond">
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="grid-item">
+                        <div class="icon">
+                            <img src="icons/fresh.png" class="icon">
+                        </div>
+
+                        <div class="gridc">
+                            <div class="iconh">
+                                <h3>Fresh Healthy Food</h3>
+                            </div>
+                            <div class="icond">
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="icon">
+                            <img src="icons/discount.png"  class="icon">
+                        </div>
+                        <div class="gridc">
+                            <div class="iconh">
+                                <h3>Fast Home Delivery</h3>
+                            </div>
+                            <div class="icond">
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+                            </div>
+                        </div>
+                    </div>       
+                </div>      
+            </div>
+            <div class="devider"></div>
+            <div class="sectiong">
+                    <div class="tag">Our Menu</div>
+                    <h2>Explore Our Menu</h2>
+                <div class="gallery">
+                    <div class="grid1"><img src="images/grid_image1.png" id="item1"></div>
+                    <div class="grid2"><img src="images/grid_image2.png" id="item2"></div>
+                    <div class="grid3"><img src="images/grid_image3.png" id="item3"></div>
+                    <div class="grid4"><img src="images/grid_image4.png" id="item1"></div>
+                    <div class="grid5"><img src="images/grid_image5.png" id="item2"></div>
+                    <div class="grid6"><img src="images/grid_image6.png" id="item3"></div>
+                    <div class="grid7"><img src="images/grid_image7.png" id="item3"></div>
+                    
+                </div>  
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_section">
+                <div class="logof">
+                    <img src="images/logo.png" id="logof">
+                </div>
+
+                <div class="ll">
+                    <h3>Main Links</h3>
+                    <ul>
+                        <li>Order Tracking</li>
+                        <li>New Order</li>
+                        <li>Contact Us</li>
+                        <li>News & Blogs</li>
+                    </ul>
+                </div>
+
+                <div class="ll">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions/li>
+                    </ul>
+                </div>
+
+                <div class="en">
+                    <h3>Support</h3>
+                    <input type="email" id="emaili" placeholder="Enter Your Email">
+                    <h3>Follow Us</h3>
+                </div>
+
+            </div>
+        </footer>
+    </body>
+</html>

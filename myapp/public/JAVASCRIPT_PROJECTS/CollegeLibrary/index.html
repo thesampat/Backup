@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="sec1">
+            <h1 id="main-heading">Sampat Library</h1>
+            <hr class="hr1">
+            <div class="addPanel">
+                <div class="book">
+                    <lable for="book" id="booklabel">Name</lable>
+                    <input type="name" class="inp" placeholder="Enter Book Name" id="book">
+                </div>
+                <div class="author">
+                    <lable for="author">Author</lable>
+                    <input type="namea" placeholder="Enter Author" class="inp" id="author">
+                </div>
+
+                <div class="type">
+                    <legend class="typem">Type</legend>
+                    <div class="radios">
+                        <div class="radiom">
+                            <input type="radio" name="typ" value="Fic" class="type1">
+                            <label for="type1" >Fiction</label>
+                        </div>
+                        
+                        <div class="radiom">
+                            <input type="radio" name="typ" value="Com" class="type1">
+                            <label for="type2">Comedy</label>
+                        </div>
+                        
+                        <div class="radiom">
+                            <input type="radio" name="typ" value="Adv" class="type1">
+                            <label for="type3">Adventure</label>
+                        </div>
+                    </div>
+                </div>
+                <button id="add_book">Add Book</button>
+        </section>
+        <section class="sec2">
+            <h1 id="sub-heading">Your Books</h1>
+            <hr class="hr1">
+            <div class="booksinfo">
+                <table id="table table-striped" style="width: 800px; text-align:left">
+                    <thead>
+                      <tr id="main-tr">
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Type</th>
+                      </tr>
+                    </thead>
+                    <tbody id="docbody">
+                    </tbody>
+                  </table>
+                
+            </div>    
+        </section>
+    </div>
+</body>
+</html>

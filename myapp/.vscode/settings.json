@@ -1,0 +1,55 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "node_modules": true,
+        "/src/**.json": true,
+        "package-lock.json": true,
+        "": true,
+        "README.md": true,
+        "src/App.test.js": true,
+        "src/logo.svg": true,
+        "src/package-lock.json": true,
+        "src/package.json": true,
+        "src/README.md": true,
+        "src/reportWebVitals.js": true,
+        "src/setupTests.js": true,
+        "yarn.lock": true,
+        ".package-lock.json": true,
+        "db.json": true,
+        "LICENSE": true,
+        "package.json": true,
+        "reactTopicsLearned.txt": true,
+        "src/Practice": true
+    },
+    "hide-files.files": [
+        "",
+        "README.md",
+        "src/App.test.js",
+        "src/logo.svg",
+        "src/package-lock.json",
+        "src/package.json",
+        "src/README.md",
+        "src/reportWebVitals.js",
+        "src/setupTests.js",
+        "yarn.lock",
+        ".package-lock.json",
+        "db.json",
+        "LICENSE",
+        "package.json",
+        "reactTopicsLearned.txt",
+        "src/Practice"
+    ],
+    "emmet.syntaxProfiles": {
+    
+    },
+
+
+    "emmet.includeLanguages" :{
+        "javascript": "javascriptreact"
+    }
+}

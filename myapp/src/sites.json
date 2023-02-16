@@ -1,0 +1,33 @@
+const var = [
+
+{
+    'name': 'FoodSite',
+    'url':'HTML_CSS PROJECTS/FoodSite/index.html',
+    'image': 'HTML_CSS_PROJECTS/Images_alt/FoodSite.png'
+}
+,
+{
+    'name': 'MusicVideo Site',
+    'url':'HTML_CSS PROJECTS/MusicVideoSite/index.html',
+    'image': 'HTML_CSS_PROJECTS/Images_alt/musicSite.png'
+}
+,
+{
+    'name': 'Parallax Site',
+    'url':'HTML_CSS PROJECTS/ParallaxWebsite/index.html',
+    'image': 'HTML_CSS_PROJECTS/Images_alt/ParallaxWebsite.png'
+}
+,
+,
+{
+    'name': 'Work Site',
+    'url':'HTML_CSS PROJECTS/WorkSite/index.html',
+    'image': 'HTML_CSS_PROJECTS/Images_alt/worksite.png'
+}
+,
+{
+    'name': 'Youtube Clone',
+    'url':'HTML_CSS PROJECTS/Youtube_Copy/index.html',
+    'image': 'HTML_CSS_PROJECTS/Images_alt/Youtube.png'
+}
+]

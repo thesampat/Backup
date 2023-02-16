@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MYWorkSite</title>
+        <style>
+
+            Html, body{
+                line-height: 1.4;
+                font-weight: 300;
+                font-family: "Roboto", sans-serif;
+            }
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+
+            /* # section one */
+
+            .wallpaper{
+                background-image: url(images/developer.png);
+                min-height: 100vh;
+                background-position: center;
+                background-size:cover;
+                background-repeat: no-repeat; 
+            }
+            .blackt, .span{
+                color: white;
+                font-size: 4em;
+            }
+
+            .titel{
+                padding-top: 50px;
+                padding-left: 100px;
+            }
+
+          .blacks, .specialtitle{
+                color: white;
+                font-size: 0.5em;
+            }
+
+            /* # section 2 */
+            .BTitle{
+                background-color: black;
+                padding: 20px;
+                display: block;
+                text-align: center;
+            }
+
+
+            /* # Section 3 */
+            .Cardsl{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 20px;
+                max-width: 1100px;
+                margin: 50px auto;
+            }
+
+            .griditem{
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+    
+            }
+
+            .card{
+                max-width: 320px;
+                height: 400px;
+                border-radius: 10px;
+
+                box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+                transition: 0.2s ease-in-out;
+            }
+
+            .card:hover {
+                transform: scale(1.04);
+                box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+                transition: 0.2s ease-in-out;
+            }
+
+            .card_c{
+                padding: 20px;
+            }
+
+            .card_c h3{
+                margin-bottom: 10px;
+            }
+            /* ---------------------------------------------------------------------------------------------- */
+            .Bottom{
+                display: flex;
+            }
+
+            .contact {
+                background-color: #515603;
+                }
+            .about {
+            background-color: #722300;
+            }
+            .contact, .about{
+                min-height: 300px;
+                padding: 32px;
+                color: white;
+            }
+
+            .about h2,
+            .contact h2 {
+            font-size: 64px;
+            font-weight: 300;
+            }
+
+            .about p,
+            .contact p {
+            margin-bottom: 20px;
+            }
+
+            @media (max-width:786px){
+                .Bottom{
+                    flex-direction: column;
+                }
+                .wallpaper {
+                min-height: 50vh;
+            }
+            .title {
+                padding: 10px 0;
+                text-align: center;
+            }
+            .span{
+                font-size:32px;
+            }
+            .BTitle h2{
+                font-size: 24px;
+
+            }
+            .BTitle h2 span{
+                font-weight: 400;
+                font-size: 32px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .about h2, .contact h2{
+                font-size: 32px;
+            }
+        }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wallpaper">
+            <div class="titel">
+                <h2 class="span"> Hi, <span class="specialtitle">i am sampat</span><br> FULL STACK <br> DEVELOPER<h2>
+            </div>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+       
+        <div class="BTitle">
+            <h2 class="blackt">WORK, I CAN DO FOR <span class="blacks">YOU</span> </h2>
+        </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+ 
+        <section class="Cardsl">
+            <div class="griditem">
+                <div class="card">
+                    <div class="imagec"></div>
+                        <img src="images/web.png" alt="web development" />
+                    <div class="card_c">
+                        <h3>Web Development</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                        quibusdam ex quaerat quasi nostrum tempore.
+                        </p>
+                    </div>
+                </div>       
+            </div>
+
+            <div class="griditem">
+                <div class="card">
+                    <div class="imagec"></div>
+                        <img src="images/mobile.png" alt="app development" />
+                    <div class="card_c">
+                        <h3>App Development</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                        quibusdam ex quaerat quasi nostrum tempore.
+                        </p>
+                    </div>
+                </div>       
+            </div>
+
+            <div class="griditem">
+                <div class="card">
+                    <div class="imagec"></div>
+                        <img src="images/web.png" alt="web development" />
+                    <div class="card_c">
+                        <h3>App Development</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                        quibusdam ex quaerat quasi nostrum tempore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="Bottom">
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolor,
+                  esse quasi doloremque temporibus quis.
+                </p>
+                <p>dosomecoding@example.test</p>
+              </div>
+              <div class="about">
+                <h2>About Me</h2>
+        
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolor,
+                  esse quasi doloremque temporibus quis.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolor,
+                  esse quasi doloremque temporibus quis.
+                </p>
+              </div>
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

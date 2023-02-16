@@ -1,0 +1,82 @@
+.noteContainer {
+    max-width: 650px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    /* border-radius: 20px; */
+    padding: 15px;
+    /* background-color: rgba(24, 231, 162, 0.205); */
+    margin-bottom: 50%;
+    min-width: 250px;
+    background-color: black;
+    color: white;
+    transform: translate(0, 25%);
+}
+
+.noteform {
+    border-radius: 0px;
+    background: none;
+    box-shadow: none;
+    margin: 10px;
+    
+}
+
+.noteform h3{
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.controlings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+
+}
+
+.controlings button{
+    padding: 2px 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 0px;
+}
+
+.edit .controlings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+
+hr {
+    background-color: black;
+    outline: none;
+    border: none;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 1px 0;
+}
+
+#edithr{
+    padding: 1px 50%;
+    background-color: black;
+}
+
+.edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input, textarea{
+    width: 90vw;
+    max-width: 100%;
+    padding: 4px;
+
+}
+
+#singlenote{
+    margin: 5px;
+}
